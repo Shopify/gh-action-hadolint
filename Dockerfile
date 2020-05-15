@@ -1,0 +1,2 @@
+FROM hadolint/hadolint@sha256:5fbab4c9d94881403ee4104857a10a447872b6ae1c9412028f02e454566283cc
+ENTRYPOINT [ "hadolint" ]

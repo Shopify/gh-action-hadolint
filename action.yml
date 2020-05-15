@@ -1,0 +1,13 @@
+# action.yml
+name: 'Hadolint Check'
+description: "Runs hadolint on the current commit's Dockerfile"
+author: 'Shopify'
+inputs:
+  dockerfile:
+    description: 'Path to dockerfile we want to check'
+    default: Dockerfile
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.dockerfile }}
